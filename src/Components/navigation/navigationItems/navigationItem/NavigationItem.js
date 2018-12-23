@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
-import classes from './BuildControl.css';
+import React  from 'react';
+import classes from './NavigationItem.css';
 
 const NavigationItem = (props) => (
-    <div className={classes.BuildControl}>
-        <div className={classes.Label}>{props.label}</div>
-        <button onClick={props.addCount} className={classes.More}>More</button>
-        <button onClick={props.removeCount}
-                className={classes.Less}
-                disabled ={props.disabled}>Less</button>
-    </div>
+    <li className={classes.NavigationItem}>
+        <a href={props.link} className={props.active ? classes.active : null}>{props.children}</a>
+    </li>
 );
 
 export default NavigationItem;
