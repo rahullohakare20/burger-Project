@@ -11,7 +11,7 @@ class Modal extends Component {
     render () {
         return (
             <Aux>
-                <BackDrop clicked={this.props.cancelPurchasing} show={this.props.showBackDrop}/>
+                <BackDrop show={this.props.show} clicked={this.props.cancelPurchasing} />
                 <div style={{transform : this.props.show ? "translateY(0)" : "translateY(-100vh)"}} className={classes.Modal}>
                     {this.props.children}
                 </div>
