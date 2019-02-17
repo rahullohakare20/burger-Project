@@ -1,7 +1,6 @@
 import React , {Component} from 'react';
 
 import CheckOutSummary from './checkoutSummary/CheckOutSummary';
-import ContactData from './contactData/ContactData';
 import {Route} from 'react-router-dom';
 import ContactData from './contactData/contactData';
 import {connect} from 'react-redux';
